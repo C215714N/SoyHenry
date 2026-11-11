@@ -12,6 +12,7 @@ function pedirComida(array) {
   // pedirComida([{nombre: "Harry", dieta: "standard"}, {nombre: "Luna", dieta: 'vegan'}, {nombre: "Goyle", dieta: "standard"}])
   // retorna {standard: 2, vegan: 1}
   // Tu código aca:
+  return array.reduce((acc,{dieta:d}) => ({...acc, [d]: (acc[d] || 0) + 1}), {})
 }
 
 // No modifiques nada debajo de esta linea //

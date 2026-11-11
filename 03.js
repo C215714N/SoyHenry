@@ -11,7 +11,8 @@ function fakeBinary2(string) {
   // Por ej:
   // fakeBinary2('5627') devuelve "1101"
   // fakeBinary("729") devuelve "101"
-  // Tu código aca:
+  // Tu código aca
+  return Array.from(string).map(n => n >= 5 ? 1 : 0).join("")
 }
 
 // No modifiques nada debajo de esta linea //

@@ -25,6 +25,7 @@ function cuantosMenores(invitados) {
   // };
   // cuantosMenores(invitados) devuelve 2
   // Tu código aca:
+  return Object.values(invitados).filter(({edad}) =>  edad < 18).length
 }
 
 
